@@ -1,0 +1,39 @@
+
+name: dew-condacolab  
+version: 231012      
+
+channels:
+  - bioconda
+  - conda-forge
+specs:
+  - python=3.10.12  
+  - scanpy=1.9.3
+  - anndata=0.10.2
+  - adjusttext=0.7.3.1
+  - leidenalg=0.8.10
+  - harmonypy=0.0.9
+  - scrublet=0.2.3
+  - pydeseq2=0.4.1
+  - gdown=4.7.1
+  - pip
+  - conda
+  - mamba 
+
+  # If any of your packages pulls in cudatoolkit:
+  # uncomment the line below to make sure it matches
+  # the output of `!echo $CUDA_VERSION` on colab
+  # and take only the major.minor components
+  # Right now, Colab uses CUDA 11.1
+  # - cudatoolkit =11.1
+
+  # Add your dependencies below this line
+  # -------------------------------------
+  - flask  # example
+
+# Pip dependencies are NOT recommended. If you do need them
+# uncomment the line below and edit `pip-dependencies.sh`.
+# post_install: pip-dependencies.sh
+
+# do not edit below this line
+# ---------------------------
+installer_type: sh
